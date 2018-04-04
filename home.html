@@ -4,10 +4,47 @@
 	<meta charset="UTF-8">
 	<title>阴阳师首页</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/home.css">
 	<script src="js/jquery.min.js"></script>
 </head>
 <body>
+	<!-- 背景部分 -->
+	<div id="bg">
+		<div class="bg bg1"></div>
+	</div>
+	<!-- 首屏 -->
+	<div id="wrap">
+		<!-- 滑入显示部分 -->
+		<div class="wSwiper">
+			<!-- 阴阳师logo部分 -->
+			<div id="logo" class="swp swp1">
+				<a href="index.php">
+					<img src="images/logo1.png" class="img1" width="35" height="115" alt="">
+					<img src="images/logo2.png" class="img2" +width="108" height="108"alt="">
+				</a>
+			</div>
+			<!-- 进入官网部分 -->
+			<div class="swp swp2">
+				<a href="index.php" target="_blank">
+				</a>
+			</div>
+			<!-- 字体部分 -->
+			<div class="swp swp3">
+				<img src="images/swp3.png" alt="">
+			</div>
+			<!-- 二维码 -->
+			<div class="swp swp4">
+				<p>扫一扫，下载游戏</p>
+				<div class="qrcode">
+					<img src="images/line.png" class="line" width="148" height="10" alt="">
+				</div>
+				 <div class="download">
+                    <a href=""><img src="images/downios.png" alt=""></a>
+                    <a href=""><img src="images/downand.png" alt=""></a>
+                 </div>
+			</div>
+		</div>
+	</div>
 	<script src="js/home.js"></script>
 </body>
 </html>
