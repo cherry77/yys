@@ -14,6 +14,7 @@
 #bg .bg1{
 	height: 1080px;
 	background-image: url('../images/bg1.jpg');
+	background-position-y: -50px;
 }
 #wrap{
 	position: relative;
@@ -100,4 +101,17 @@
 	width: 205px;
     height: 130px;
 }
-/*11111*/
+#wrap .videoBtn{
+	position: absolute;
+	top: 425px;
+	right: 380px;
+	width: 165px;
+    height: 120px;
+	background:url(../images/videoBtn.png) no-repeat;
+	cursor: pointer;
+}
+#wrap .videoBtn img{
+	position: absolute;
+	top:2px;
+	right: 2px;
+}

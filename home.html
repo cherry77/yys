@@ -8,9 +8,19 @@
 	<script src="js/jquery.min.js"></script>
 </head>
 <body>
+	<!--[if lt IE 9]>
+		  <div style="position:relative;z-index:99;width:100%;height:50px;background:#ffffe9;color:#1e5494;border-bottom:1px solid #e6e6c6;text-align:center;line-height:50px;font-size:12px;">您使用的浏览器版本过低，可能会影响到您浏览本网页，建议您升级您的浏览器。</div>
+	<![endif]-->
 	<!-- 背景部分 -->
 	<div id="bg">
-		<div class="bg bg1"></div>
+		 <div class="bg bg1">
+                <!--<embed src="https://nie.res.netease.com/nie/flash/2017MobileGames/yys/0519/yys_xsjj.swf?a=9" width="100%" height="100%" type="application/x-shockwave-flash">-->
+                <object data="https://nie.res.netease.com/nie/flash/2017MobileGames/yys/0519/yys_xsjj.swf?a=9" type="application/x-shockwave-flash" id="flash_641895589" width="100%" height="1026">
+                    <param name="allowScriptAccess" value="always">
+                    <param name="wmode" value="transparent">
+                    <param name="movie" value="https://nie.res.netease.com/nie/flash/2017MobileGames/yys/0519/yys_xsjj.swf?a=9">
+                </object>
+            </div>
 	</div>
 	<!-- 首屏 -->
 	<div id="wrap">
@@ -44,6 +54,10 @@
                  </div>
 			</div>
 		</div>
+		<!-- 首页视频按钮 -->
+		<div class="videoBtn">
+            <img src="images/videoBtnAR.png" alt="">
+        </div>
 	</div>
 	<script src="js/home.js"></script>
 </body>
