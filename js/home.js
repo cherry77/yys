@@ -22,3 +22,21 @@
 	}, 1300);
 })();
 
+//视频弹窗
+(function(){
+	var $wrap = $("#wrap"),
+		$btn = $wrap.find(".videoBtn"),
+		$video = $wrap.find(".video"),
+		$close = $wrap.find(".close_btn");
+
+		$btn.click(function(){
+			$video.show();
+			$(document.body).addClass('noScroll');
+		});
+		$close.click(function(){
+			$video.hide();
+			$(document.body).removeClass('noScroll');
+		});
+
+})();
+
