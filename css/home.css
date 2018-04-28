@@ -1,0 +1,182 @@
+#bg{
+	/*需要铺在所有的最下面，故用绝对定位*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-width: 1280px;
+}
+body.noScroll{
+	overflow: hidden;
+	height: 100%;
+}
+#bg .bg{
+	width: 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+#bg .bg1{
+	height: 1080px;
+	background-image: url('../images/bg1.jpg');
+	background-position-y: -50px;
+}
+#wrap{
+	position: relative;
+	width:100%;
+	height: 1080px;
+}
+#wrap .wSwiper .swp1{
+	opacity: 0;
+	position: relative;
+	top: 0px;
+	left: -200px;
+	width: 149px;
+	height: 119px;
+	margin: 10px 0 0 20px;
+}
+#wrap .wSwiper .swp1 a img.img2{
+	position: absolute;
+	top: 0px;
+	left: 46px;
+	width: 90px;
+	height: 90px;
+}
+#wrap .wSwiper .swp2{
+	opacity: 0;
+	position: absolute;
+	top: 10px;
+	right: -200px;
+	width: 177px;
+	height: 45px;
+	background: url('../images/goindex.png');
+}
+#wrap .wSwiper .swp2 a{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.1);
+    border-radius: 20px;
+    transition: .3s;
+}
+#wrap .wSwiper .swp2 a:hover{
+    background: rgba(0,0,0,0);
+}
+#wrap .wSwiper .swp3{
+	position: absolute;
+	top: 470px;
+	right: 50px;
+	opacity: 0;
+}
+#wrap .wSwiper .swp4{
+	position: absolute;
+	top: 810px;
+	opacity: 0;
+	right: 140px;
+	width: 354px;
+	height:150px;
+}
+#wrap .wSwiper .swp4 .qrcode{
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 130px;
+	border-radius: 8px;
+	background:rgba(255,255,255,0.5) url('../images/qrcode.png') no-repeat center center/120px 120px;
+}
+#wrap .wSwiper .swp4 .line{
+	position: absolute;
+	top: 5px;
+	left: 2px;
+	width: 130px;
+	height: auto;
+	animation: zidingyi 4s linear infinite;
+}
+@keyframes zidingyi{
+	0%{top: 4px;}
+	50%{top: 120px;}
+	100%{top: 4px;}
+}
+#wrap .wSwiper .swp4 p{
+	color: #3d2672;
+	font-size: 16px;
+	font-weight: bold;
+}
+#wrap .wSwiper .swp4 .download{
+	float: right;
+	width: 205px;
+    height: 130px;
+}
+#wrap .download a.android{
+	width: 205px;
+	height: 61px;
+	background: #000;
+}
+#wrap .download a.android img{
+	opacity: 0.8;
+}
+#wrap .download a.android img:hover{
+	opacity: 1;
+}
+#wrap .videoBtn{
+	position: absolute;
+	top: 425px;
+	right: 380px;
+	width: 165px;
+    height: 120px;
+	background:url(../images/videoBtn.png) no-repeat;
+	cursor: pointer;
+}
+#wrap .videoBtn img{
+	position: absolute;
+	top:2px;
+	right: 2px;
+}
+/*视频出现时的透明暗色背景*/
+.video{
+	display: none;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+}
+.video .video_box{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 800px;
+	height: 450px;
+	border: 2px solid #b69476;
+}
+.video .close_btn img{
+	position: absolute;
+	top: 0px;
+	right: -40px;
+	width: 34px;
+	height: 34px;
+	cursor: pointer;
+	transform: rotate(0deg);
+	transition: .3s;
+}
+.video .close_btn img:hover{
+	transform: rotate(180deg);
+}
+/*鼠标*/
+.down_mouse{
+	position: absolute;
+	left: 50%;
+	margin-left: -15px;
+	bottom: 220px;
+	opacity: 1
+	width: 30px;
+	height: 70px;
+	animation: drop .8s linear infinite;
+}
+@keyframes drop{
+	from{bottom: 220px;opacity: 1}
+	to{bottom: 150px;opacity: 0}
+}

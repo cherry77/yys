@@ -18,6 +18,7 @@ address, caption, cite, code, dfn, em, strong, th, var {
     font-style:normal; font-weight:normal;
 }
 a{
+    display: inline-block;
     text-decoration:none;
 }
 img{
